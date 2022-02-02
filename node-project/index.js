@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     //   console.log("Total of items:", response.headers['x-wp-total']);
         console.log('response', response.data[0].backorders);
 
-      res.json([response.data])
+      res.json(response.data)
     //   res.json({hello: response.data[0]})
     // res.json({hello: response.headers})
     // res.json({hello: response.headers})
