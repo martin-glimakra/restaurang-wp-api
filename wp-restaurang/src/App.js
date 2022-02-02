@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
+import Postcomponent from './components/Postcomponent';
 
 function App() {
 
@@ -9,6 +10,8 @@ function App() {
     console.log('ue');
     fetchMovies()
     }, []);
+
+
   
   const [state, setState] = useState();
 
@@ -21,7 +24,7 @@ function App() {
   
   return (
     <div className="App">
-
+      <Postcomponent />
     </div>
   );
 }
